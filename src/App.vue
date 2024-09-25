@@ -1,37 +1,27 @@
 <script setup>
-import Card from "./components/Card.vue"
+import Card from "./components/Card.vue";
+import Header from "./components/Header.vue";
 
 </script>
 
 <template>
-  <card />
+  <div class="bg-white w-4/5 m-auto rounded-xl shadow-xl mt-14">
+    <Header />
+
+    <div class="p-10">
+      <h2 class="text-3xl font-bold mb-8">All Shoes</h2>
+
+      <div class="grid grid-cols-4 gap-5">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+
+      </div>
+
+    </div>
+
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
